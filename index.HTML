@@ -4,49 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Insight</title>
+    <title>Car Insight</title>
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
 </head>
 
 <body>
-    <nav class="nav">
-        <ul class="header">
-        <li class="list">
-            <a href="#Home" class="nav-link active"></a>
-        </li>
-        <li class="list">
-            <a href="#about" class="nav-link"></a>
-        </li>
-        <li class="list">
-            <a href="#skills" class="nav-link"></a>
-        </li>
-        <li class="list" >
-            <a href="#projects" class="nav-link"></a>
-        </li>
-        <li class="list" >
-            <a href="#contact" class="nav-link"></a>
-        </li>
-    </ul>
-        <div class="container">
-            <img class="logo" src="Logo/Logo.png" alt="" srcset="">
+    
+    <ul class="header">
+        <div class="dropdown">
+          <button class="dropbtn">Cars
+          </button>
+          <div class="dropdown-content">
+            <a href="#">New Cars</a>
+            <a href="#">Used Cars</a>
+          </div>
         </div>
-    </nav>
-        <form class="ls" action="">
-            <input type="search" name="search" id="search" maxlength="20">
-            <input type="submit" value="Search" id="btn">
-        </form>
- 
- 
- 
+      </li>
+      <li class="list">
+        <div class="dropdown">
+          <button class="dropbtn">Car Reviews
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Sales/Year</a>
+            <a href="#">Cars Comparision</a>
+            <a href="#">Value for Money Comparision</a>
+            <a href="#">Cars of the Month</a>
+            <a href="#">Cars Of the Year</a>
+          </div>
+        </div>
+      </li>
+      <li class="list" >
+        <div class="dropdown">
+          <button class="dropbtn">Car Insight Tips
+          </button>
+        <div class="dropdown-content">
+          <a href="#">Best buy option</a>
+          <a href="#">Car Insight Top Rankings</a>
+        </div>
+      </li>
+      <li class="list" >
+        <div class="dropdown">
+          <button class="dropbtn">Car Insiders
+          </button>
+        <div class="dropdown-content">
+          <a href="#">Cars Saga</a>
+          <a href="#">Top Stories</a>
+        </div>
+      </li>
+      <div class="container">
+        <img class="logo" src="Logo/Logo.png" alt="" srcset="">
+      </div>
+      <form class="ls" action="">
+        <input type="search" name="search" id="search" maxlength="20">
+        <input type="submit" value="search" id="btn">
+          </form>
+    </ul>
  
                   <!-- Section1 -->
-                <div class="PageNav">
+                  <h1>New Launches</h1>
+      <div class="PageNav" id="PageNav">
                   <div class="cr">
                     <img src="demoimg3.jpg" alt="Feature1" class="image">
                     <div class="overlay">
-                      <div class="text">Feature 1</div>
+                      <div class="text">XUV 700 </div>
                     </div>
                   </div>
                   <div class="cr">
@@ -74,59 +97,7 @@
 
                           <!-- Section 2 : Slider  -->
 
-                <div class="car">
-                  <div class="mySlides">
-                    <img src="demoimg1.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides">
-                    <img src="demoimg2.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides">
-                    <img src="demoimg3.jpg" style="width:100%">
-                  </div>
-                    
-                  <div class="mySlides">
-                    <img src="demoimg4.jpeg" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides">
-                    <img src="demoimg5.jpg" style="width:100%">
-                  </div>
-                    
-                  <div class="mySlides">
-                    <img src="demoimg6.jpeg" style="width:100%">
-                  </div>
-                    
-                  <a class="prev" onclick="plusSlides(-1)">❮</a>
-                  <a class="next" onclick="plusSlides(1)">❯</a>
-                
-                  <div class="caption-container">
-                    <p id="caption"></p>
-                  </div>
-                
-                  <div class="row">
-                    <div class="column">
-                      <img class="democursor" src="demoimg1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                    </div>
-                    <div class="column">
-                      <img class="democursor" src="demoimg2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                    </div>
-                    <div class="column">
-                      <img class="democursor" src="demoimg3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                    </div>
-                    <div class="column">
-                      <img class="democursor" src="demoimg4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                    </div>
-                    <div class="column">
-                      <img class="democursor" src="demoimg5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                    </div>    
-                    <div class="column">
-                      <img class="democursor" src="demoimg6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                    </div>
-                  </div>
-                </div>
+                <!-- Auto Slide courosel  -->
                 
 <script src="JavaScript/Index.js"></script>
 <script src="JavaScript/slider.js"></script>
