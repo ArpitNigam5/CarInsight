@@ -1,0 +1,324 @@
+<<<<<<< HEAD
+
+:root{
+    --color1:#EAEBED;
+    --color2:#006989;
+    --color3:#FF8600 ;
+    --color4:#08A045;;
+    --color5:#3B3923;
+    margin: 0;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color1);
+    height: 100vh;
+    width: 100vw;
+    
+}
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    top:0;
+    left: 50px;
+    padding: 30px 100px;
+    width: 100%;
+    z-index: 100;
+    list-style: none;
+}
+.list{
+    padding: 10px;
+    position: relative;
+
+}
+
+.list .active,
+.nav-link:hover{
+    color: var(--color3);
+}
+
+.list a{
+    color: var(--color1);
+}
+
+.container{
+    background-color: var(--color2);
+    height: 100px;
+    width: 100vw;
+    border-radius: 0 0 13px  13px ;
+}
+.logo{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--color2) ;
+    border-radius: 50%;
+    
+}
+.searchbox{
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    height: 3vh;
+    width: 15vw;
+    color: grey;
+}
+.searchbutton{
+    background-color: rgb(180, 164, 164);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid black;
+    height: 3vh;
+    width: 3vw;
+}
+.searchbimg{
+    width: 50%;
+    height: 100%;
+}
+
+=======
+
+:root{
+    --color1:#EAEBED;
+    --color2:#006989;
+    --color3:#FF8600 ;
+    --color4:#08A045;;
+    --color5:#3B3923;
+    margin: 0;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--color1);
+    height: auto;
+    width: auto;
+    
+}
+.nav{
+    position: sticky;
+}
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    top:0;
+    left: 50px;
+    padding: 30px 100px;
+    width: 100%;
+    z-index: 100;
+    list-style: none;
+}
+.list{
+    padding: 10px;
+    position: relative;
+}
+.ls{
+    position:absolute;
+    right:75px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    border: none;
+}
+#search{
+    border: none;
+    border-radius: 10px;
+}
+#btn{
+    border-radius: 10px;
+    padding: 2px;
+    width: 100px;
+}
+.list .active,
+.nav-link:hover{                
+    color: var(--color3);
+}
+
+.list a{
+    color: var(--color1);
+}
+
+.container{
+    background-color: var(--color2);
+    height: 100px;
+    width: 100vw;
+    border-radius: 0 0 13px  13px ;
+}
+.logo{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--color2) ;
+    border-radius: 50%;
+    
+}
+
+
+                                                        /* Section 1 : Box CSS */
+
+.PageNav{
+  margin: 10vh 20px 20vh ;
+  display: flex;
+  width: 100%;
+}
+
+.cr {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color2);
+  overflow: hidden;
+  width: 90%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.cr:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+                          /* Section 2 : Slider CSS */
+
+
+img {
+  vertical-align: middle;
+}
+
+
+.car {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.democursor{
+  width: 25px;
+  height: 200px;
+}
+>>>>>>> 8f44abc (Initial Commit)
