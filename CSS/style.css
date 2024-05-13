@@ -1,9 +1,10 @@
 :root{
   --color1:#EAEBED;
-  --color2:#006989;
+  --color2:#00214dda;
   --color3:#FF8600 ;
   --color4:#08A045;;
   --color5:#3B3923;
+  --color6:#00000080;
   margin: 0;
 }
 *,
@@ -17,8 +18,9 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body{
-  background-color: var(--color1);
+  background-image: linear-gradient(19deg,#21D4FD,#B721FF);
   height: auto;
   width: auto;
   
@@ -32,29 +34,14 @@ body{
   width: 100%;
   z-index: 5;
   list-style: none;
-  background-color: var(--color2);
+  background-color: var(--color6);
   border-radius: 0  0  0 25px;
 }
 .list{
-  padding: 10px;
+  padding: 0px;
+  padding-left: 30px;
 }
-.ls{
-  position:absolute;
-  right:75px;
-  width: 250px;
-  height: 30px;
-  display: flex;
-  border: none;
-}
-#search{
-  border: none;
-  border-radius: 10px;
-}
-#btn{
-  border-radius: 10px;
-  padding: 2px;
-  width: 100px;
-}
+
 .list .active,
 .nav-link:hover{                
   color: var(--color3);
@@ -97,7 +84,7 @@ body{
   display: none;
   position: absolute;
   min-width: 160px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--color6);
   z-index: 1;
   border-radius: 0 0 10px 10px;
 }
@@ -112,29 +99,91 @@ body{
 }
 
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
+a{
+ color: #EAEBED; 
+}
+#searchBar{
+  height: 30px;
+  width: 300px;
+}
+
+#sb{
+  display: none;
+  color: var(--color1);
+  text-decoration: none;
+  position: absolute;
+  background-color: var(--color6);
+  z-index: 5;
+  width: 300px;
+}
+
+.sbtn{
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sbtn:active,
+.sbtn:hover {
+  outline: 0;
+}
+
+.sbtn span {
+  background-color: rgb(5, 6, 45);
+  padding: 6px 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.sbtn:hover span {
+  background: none;
+}
+
 
 
                                                       /* Section 1 : Box CSS */
 
 .PageNav{
-padding: 10vh 50px 10vh;
+padding-top: 15vh;
 display: flex;
-width: 100%;
+justify-content: space-between;
 }
 
 .cr {
+  overflow: hidden;
 position: relative;
-width: 50%;
+object-fit:cover;
+margin: 5px;
 }
 
 .image {
 display: block;
-width: 90%;
-height: 50vh;
+object-fit:contain;
+width: 400px;
+height: 250px;
 }
 
 .overlay {
@@ -142,12 +191,14 @@ position: absolute;
 bottom: 0;
 left: 0;
 right: 0;
-background-color: var(--color2);
+background-color: var(--color6);
 overflow: hidden;
-width: 90%;
+width: 100%;
 height: 0;
 transition: .5s ease;
+
 }
+
 
 .cr:hover .overlay {
 height: 100%;
@@ -163,8 +214,57 @@ left: 50%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 text-align: center;
+overflow: hidden;
+
+}
+
+.h1{
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-left:40% ;
+  margin-top: 30px;
+  color: var(--color1);
 }
 
 
-
                         /* Section 2 : Slider CSS */
+
+.slideshow-container{
+  height: 400px;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 26vh;
+  margin-top: 10vh;
+  color: var(--color1);
+  font: 30px "Helvetica Neue";
+  background-color: var(--color6);
+  padding: 50px;
+  overflow: hidden;
+}
+h3{
+  color: var(--color4);
+}   
+.active {
+ background-color: #717171;
+}
+.fade {
+animation-name: shift;
+animation-duration: 2s;
+}
+                        
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+@keyframes shift {
+  0%{transform:scale(0,0)}
+
+  30%{
+    transform: scale(0.3,0.3);
+  }
+  70%{
+    transform: scale(1,1);
+  }
+} 
